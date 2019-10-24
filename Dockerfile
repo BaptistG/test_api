@@ -2,7 +2,7 @@ FROM ubuntu
 
 RUN apt-get update
 RUN apt-get install -y python3
-RUN apt-get install -y pip3
+RUN apt-get install -y python3-pip3
 
 COPY . /opt/source_code
 RUN pip3 install -r /opt/source_code/requirements.txt
